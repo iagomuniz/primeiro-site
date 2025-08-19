@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="por que eu deveria escrever uma descrição se ninguém vai ver isso no google?"/>
+    <meta name="author" content = "Lonlysoft"/>
+    <link rel="icon" href = "images/checkerOpt.svg"/>
+    <title>episodio 2</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body bgcolor = "#ffc">
+    <header>
+        <h1>Relembrando...</h1>
+        <h6 style = "padding: 0; margin: 0;">não pra mim. óbvio</h6>
+        <p>
+            estavamos falando sobre tags...<br/>
+            <q>tags são como uns elementos que os sites têm. é uma miscelânea de coisas.</q>
+            <br/>
+            - guém, nin 2025.<br/>
+        </p>
+        <a href = "#tagged"><button>descobrir as tags</button></a>
+
+    </header>
+   
+    <hr>
+    <section id = "tagged">
+        <h2>html tem um monte de tags diferentes e cada uma tem um proposito específico</h2>
+        Tipo a tag <i>section</i> que serve pra deixar o código legivel e o <strong><mark><abbr title = "Search Engine Optimization">SEO</abbr></mark></strong> feliz.<br/>
+        Algumas tags vão ser descontinuadas <del>e isso aparentemente é normal.</del>
+        faz parte da <i><b>evolução das linguagens</b></i>
+
+        <p>No final você ainda poderá:</p>
+        <ul>
+            <li>fazer listas não ordenadas</li>
+            <li>fazer <button>botões</button></li>
+            <li><small>minimizar o texto (caso você queira)</small></li>
+            <li><u>sublinhar informações</u></li>
+            <li>
+                ou até mesmo...
+                <ol>
+                    <li>fazer uma lista ordenada dentro da sua própria lista não ordenada</li>
+                    <li>fazer um input de texto para você escrever coisas, ou só validar formulario...
+                        <input type = text placeholder = "digite aqui!"/>
+                    </li>
+                    <li><q>citar coisas que você não viu <cite>(as vezes eu faço isso...)</cite></q></li>
+                    <li><abbr title = "isso é bastante específico, mas acontece sempre">abreviar coisas que você não abreviaria</abbr></li>
+                </ol>
+            </li>
+        </ul>
+
+    </section>
+    
+    <aside>
+        <p>
+            ah e inclusive. você pode criar gráficos aqui... utilizando... svg.
+            você sabia que aqueles desenhos de vetor são HTML inline?
+            pessoal do photoshop não vai dormir a noite por esse fato.
+        </p>
+        <p>
+        Saca só:
+        </p>
+        <abbr title = "estrela de 4 pontas">
+            <svg viewbox = "0 0 120 100" height = "300">
+                <path fill = "blue" d = "M 60 0 l 10 30 l30 10 l -30 10 l -10 30 l -10 -30 l -30 -10 l 30 -10 z"/>
+                <path fill = "lightBlue" d = "M 60 0 l -10 30 l -30 10 h 40z"/>
+                <path fill = "darkBlue" d = "M 60 40 h 40 l -30 10 l -10 30z">
+            </svg>
+        </abbr>
+        <p>
+        - eu tenho medo de você...
+        </p>
+        <a href = "#notOverYet">
+            <button>             
+                próximo tópico
+                <svg viewbox = "0 0 50 50" height = "8">
+                    <path stroke = "black" fill = none stroke-width = "3px" d = "M 0 0 l 25 25 l -25 25">
+                </svg>
+            </button>
+        </a>
+        <p>
+        - o medo AUMENTOU...
+        </p>
+    </aside>
+    <hr/>
+    <h2>
+        <bdo dir = "rtl">mas não é só isso!</bdo>
+    </h2>
+    <section id = "notOverYet">
+        <h2>Vamos falar dos links agora</h2>
+        html n é hmtl sem seus LINKs aqui são chamados de HyperTexto ou seja... você tá fazendo marcações com um hypertexto. CINEMA.
+        <!--se eu abrir isso e ele conseguir pesquisar, acabou. me chamem de rei do DNS-->
+        <a href = "https://lonlysoft.github.io/Funky_Pack" target = "_blank">clique aqui</a><br/>
+        <!--pessima noticia caras :( -->
+        <a href = "sobre.html">mas você pode se linkar se a si mesmo</a>
+    </section>
+    <hr/>
+
+    <section>
+        <h2>Vamos falar sobre formulários e tabelas. Ao mesmo tempo.</h2>
+        <p>
+            Formulários são, segundo os backenders, <strong>a única utilidade do front-end</strong> (e as vezes é mesmo).
+            formulários tem um loop de gameplay bem interessante e simples.
+            <ol class="listed">
+                <li>Você dá as suas informações</li>
+                <li>Verificamos suas informações</li>
+                <li>guardamos em <strong>algum lugar</strong></li>
+                <li></li>
+                <li>Você fica feliz</li>
+            </ol>
+            tabelas são algo que os backenders entendem bem. banco de dados que o diga. Normalmente é pra esse algum lugar que enviamos essa informação.
+            Mas isso não quer dizer que a gente não possa fazer tabelas aqui também. olha só:
+        </p>
+        <a href = "formulair_secondary.html"><button>ir para o formulário em outra página</button></a>
+    </section>
+
+    <section class="flex-responsive">
+        <form action="" method="post" class="formulair flex-column">
+            <h3>registrar</h3>
+            <label for="name-text">nome: </label>
+            <input type="text" name="users-name" id="name-text" class="nome">
+            <label for="name-pass">sobrenome</label>
+            <input type="text" name="users-password" id="name-pass" class="senha"/>
+            <label for="name-height">altura</label>
+            <input type="number" name="users-height" id="name-height">
+            <label for="name-age">altura</label>
+            <input type="number" name="users-age" id="name-age">
+            <input type="button" value="entrar">
+        </form>
+        <table>
+            <th colspan="4">seus dados</th>
+            <tr>
+                <th>nome</th>
+                <th>sobrenome</th>
+                <th>altura</th>
+                <th>idade</th>
+            </tr>
+            <tr>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+    </section>
+    <div class="perspectived brightSky" id = "airway">
+        <div class = "extraBrightSky layer4"></div>
+    </div>
+    <section>
+        <h2>IFrames - site dentro do site</h2>
+        <p>okay, agora é o <strong>momento inseption!</strong> temos coisas
+            chamadas de iframes que como o nome já diz... tá ele não entrega muito bem o que ele faz. 
+            O que importa é que o siteception é real. IFrames colocam um site dentro de um site.</p>
+        <iframe src="/sobre.html" frameborder="0" class="selfFrame"></iframe>
+        <p>Bastante doido, não?</p>
+        <P>agora como eu faço pra proteger o funky pack de iframes? só uma curiosidade eu não tô reclamando tá?</P>
+        <section class="warning">
+            <h3>Aviso</h3>
+            <p>você não conseguirá usar um Iframe se o site não permitir. existem algumas coisas de segurança que os sites fazem par abloquear o iFrame. justamente para evitar de piratearem o site. um site que dão um iFrame seguro pra você botar é o YouTube, o querido youtubiu está fechadão com os iframes</p>
+        </section>
+    </section>
+    <section>
+        <h2>Audio & Video</h2>
+        <p>Você pode botar audios em seu site. As regras dizem que não, mas ao mencionar sites de musica como rádios ou o spotify e eles ficam quietos. você pode até mesmo fazer efeitos sonoros e colocá-los aqui. Porém isso é feito com o JavaScript. Entremos em detalhes depois (que foreshadowing hein!?)</p>
+        <audio controls>
+            <source src = "audio/null.mp3" type= "audio/mpeg">
+        </audio>
+        <br>
+        <p>agora. vídeo. Em questão de sintaxe é a mesma coisa da tag de audio</p>
+        <video controls poster = "images/cloudyBg.png" width = "100%">
+            <source src="video/null.mp4" type="video/mpeg">
+        </video>
+        
+        <p>&RightArrow; Para as imagens não ficarem de fora da sintaxe. temos a nossa querida tag picture. agora o SEO ficará feliz porque ele gosta dessas coisas.</p>
+        <picture>
+            <source src="images/star.svg" srcset="" type = "">
+        </picture>
+        <img src = "images/star.svg" alt = "estrela de 4 pontas">
+    </section>
+
+    <section>
+        <p>agora falaremops de tags semânticas. Também conhecido como: uma forma de fazer o SEO ficar feliz</p>
+        <a href="semantic.html"><button>Faça o SEO feliz!!!!</button></a>
+    </section>
+
+    <footer>
+        &copy 2020 - 2025
+        <address>Rua do Exemplo 13000, American City</address>
+    </footer>
+   
+</body>
+</html>

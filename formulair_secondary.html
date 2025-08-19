@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Episódio 3 - fromularius</title>
+</head>
+<body class = "flex-column-centered fit-to-viewport">
+    <h1>Formulario</h1>
+    <p>deja vus do trabalho de Propgramação Orientada à Objetos.</p>
+    <main class="unit">
+        <form action = "vitality.php" method="post">
+            <div class = form-txt-to-txt> 
+                <label for="campo_nome">Nome</label>
+                <input type="text" name="campo_nome" id="campo_nome" placeholder="seu nome" required>
+                <label for="tel-cell">telefone</label>
+                <input type="tel" name="tel-cell" id="tel-cell" placeholder="+## (##) #####-####">
+           
+                <label for="campo_email">email</label>
+                <input type="email" name="email" id="campo_email"  placeholder="mail@example.dot">
+
+                <label for="campo__cor_favorita">cor favorita</label>
+                <input type="color" name="cor_favorita" id="campo__cor_favorita">
+
+                <label for="option__"> escolhi essa cor pois </label>
+                <select name="option__" id="option__">
+                    <option disabled selected value ="">motivo</option>
+                    <option value="like_color">porque sim</option>
+                    <option value="hate_color">odeio essa cor</option>
+                    <option value="love_color">amo essa cor <3 </option>
+                    <option value="referential_plexus">me lembra alguém</option>
+                    <option value="what">que pergunta tosca?</option>
+                    <option value="favorite_favorite">por que é a minha favorita</option>
+                    <option value="color_question">que cor?</option>
+                    <option value="not_answer">prefiro não responder</option>
+                    <option value="not_know">não faço a menor ideia</option>
+                </select>
+            </div>
+            <hr>
+                <h2>Selcione os eletrodomésticos que você possui.</h2>
+                <input type="checkbox" name="campo__eletrodomesticos" id="campo__eletrodomesticos__item1">
+                <label for="campo__eletrodomesticos__item1">geladeira</label>
+                <br>
+                <input type="checkbox" name="campo__eletrodomesticos" id="campo__eletrodomesticos__item2">
+                <label for="campo__eletrodomesticos__item2">fogão</label>
+                <br>
+                <input type="checkbox" name="campo__eletrodomesticos" id="campo__eletrodomesticos__item3">
+                <label for="campo__eletrodomesticos__item3">maquina de lavar (o tanquinho não deve ser considerado)</label>
+                <br>
+                <input type="checkbox" name="campo__eletrodomesticos" id="campo__eletrodomesticos__item4">
+                <label for="campo__eletrodomesticos__item4">pote de groselha</label>
+            <br>
+            <hr>
+            <div>
+                <input type="checkbox" name="check_remembering" id="check_Remembering">
+                <label for="check_Remembering">quero salvar minhas informações como cookies</label>
+                <br/>
+                <input type="checkbox" name="check_remembering" id="check_terms" required>
+                <label for="check_terms">aceito os termos de uso e <a href = "">politica de privacidade</a></label>
+            </div>
+            <br>
+
+            <textarea name="feedback_area" id="feedback" cols="90" rows="4" class="feedback" placeholder="nos dê seu feedback (opcional?)" required></textarea>
+            <input type="submit" class="buttonical">
+        </form>
+    </main>
+    <a href = "index.html">
+    <svg viewbox = "0 0 50 50" height = "8">
+        <path stroke = "black" fill = none stroke-width = "3px" d = "M 25 0 l -25 25 l 25 25">
+    </svg>
+    voltar
+    </a>
+</body>
+</html>
