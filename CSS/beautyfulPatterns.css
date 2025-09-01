@@ -1,0 +1,51 @@
+@keyframes passiveSlide{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -4em 2em;
+    }
+}
+@keyframes passiveSlide2{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -2000px 1000px;
+    }
+}
+
+.button-look{
+    text-decoration: none;
+    padding:0.5em;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.button-look:hover{
+    background-color: #000;
+    color:#efe;
+}.button-look:hover .icons-small{
+    fill: #fff;
+    stroke: #fff;
+}
+.no-decoration{
+    text-decoration: none;
+    background: transparent;
+    border: none;
+}
+
+.no-text-decortation{
+    text-decoration: none;
+}
+
+.pseudo-glassy{
+    background: #1002;
+    backdrop-filter:blur(3px);
+    padding:0.5em;
+    border-radius: 10px;
+}
+
+.perspectived{
+    perspective: 8em;
+}

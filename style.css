@@ -1,34 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
-@keyframes passiveSlide{
-    from{
-        background-position: 0 0;
-    }
-    to{
-        background-position: -4em 2em;
-    }
-}
-@keyframes passiveSlide2{
-    from{
-        background-position: 0 0;
-    }
-    to{
-        background-position: -2000px 1000px;
-    }
+.formulario-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    color: black;
+    font-weight: 1000;
+    width: 20em;
+    height: 8em;
+    background: linear-gradient(0deg, black 1%, rgba(0, 0, 0, 0) 50%), url("https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg");
+    background-size: cover;
+    border-radius: 1em;
+    box-sizing:border-box;
 }
 
-.poiret-one-regular {
-  font-family: "Poiret One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+.menu-carrossel__item-container a{
+    width: 40%;
 }
 
-.monospace {
-  font-family: monospace, sans-serif;
-  font-weight: 400;
-  background: #aaa;
-  padding: 2px;
-  font-style: normal;
+.formulario-btn:hover{
+    border: 2px dotted #000;
+    background-size: 110%;
+    transition: background-size 0.1s, border 0.1s;
 }
 
 h1, h6{
@@ -37,11 +29,16 @@ h1, h6{
     text-align:center;
 }
 
+p{
+    text-align:justify;
+}
+
 body{
     background-image: url(images/checkerOpt.svg);
     background-size: 2em 2em;
     animation: passiveSlide 1s linear infinite;
     padding:1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 section, header{
@@ -64,68 +61,6 @@ button{
     padding:0.5em 1em;
     border:none;
     border-radius: 50px;
-}
-
-.text-centered{
-    text-align: center;
-}
-
-.flex-responsive{
-    display: flex;
-    flex-direction: column;
-    background: transparent;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    padding:1em;
-}
-
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
-.std-gap{
-    gap:1em;
-}
-.std-margin-bottom{
-    margin-bottom: 1em;
-}
-
-.flex-column-centered{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-}
-
-.fit-to-viewport{
-    width:100vw;
-    height:100vh;
-    padding:1em;
-    margin:0;
-    box-sizing: border-box;
-    gap:1em;
-}
-
-.fit-to-viewport-width{
-    width:100%;
-    box-sizing: border-box;
-}
-
-.selfFrame{
-    border-radius: 0.5em;
-}
-
-.pseudo-glassy{
-    background: #1002;
-    backdrop-filter:blur(3px);
-    padding:0.5em;
-    border-radius: 10px;
 }
 
 td, th{
@@ -153,6 +88,14 @@ button:hover{
     background: #9002;
 }
 
+.menu-carrossel{
+    width:100%;
+}
+
+.menu-carrossel__item-container{
+    width:100%;
+}
+
 .form-txt-to-txt{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -168,36 +111,9 @@ button:hover{
     backdrop-filter:blur(3px);
     padding:0;
     margin:0;
-}
-
-.button-look{
-    text-decoration: none;
-    padding:0.5em;
-    border-bottom: 1px solid #000;
-    color: #000;
-}
-.button-look:hover{
-    background-color: #000;
-    color:#efe;
-}
-.no-decoration{
-    text-decoration: none;
-    background: transparent;
-    border: none;
-}
-
-@media (min-width: 28em){   
-.flex-responsive{
-    display: flex;
-    flex-direction: row;
-    background: transparent;
-    gap: 1em;
-    padding:1em;
-}
-}
-
-.perspectived{
-    perspective: 8em;
+    position:fixed;
+    z-index: 3;
+    bottom:0;
 }
 
 .brightSky{
@@ -217,46 +133,56 @@ button:hover{
 
 .svg-changes-hovered:hover{
     fill:#fff;
+    stroke: #fff;
+}
+
+.icons-small{
+    width:1em;
 }
 
 .layer4{
     background-image: url("images/cloudyExtraExtraBg.png");
     width:150%;
     position:absolute;
-    top:20%;
+    top:25%;
     animation: passiveSlide2 4s linear infinite;
     height:100%;
     background-size: 1000px 500px;
     transform: rotateX(-45deg);
 }
-
-.cloudyAnimation{
-    width:100%;
-    height:50%;
-    background-image: -moz-element();
+.layer3{
+    background-image: url("images/cloudyExtraExtraBg.png");
+    width:200%;
+    position:absolute;
+    top:30%;
+    animation: passiveSlide2 8s linear infinite;
+    height:100%;
+    opacity:50%;
+    background-size: 1000px 500px;
+    transform: rotateX(-45deg);
 }
+
 
 .googleLetters{
     color:blue;
     text-shadow: 1px 1px 0 #000;
 }
 
-
 .googleLetters:nth-child(2){
     color:red;
 }
-
 
 .googleLetters:nth-child(3){
     color: #aa2;
 }
 
-
 .googleLetters:nth-child(5){
     color: green;
 }
 
-
 .googleLetters:nth-child(6){
     color: red;
+}
+
+@media (min-width: 32em){
 }
